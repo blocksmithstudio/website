@@ -25,8 +25,8 @@ export default function ContactPage() {
             <input name="name" placeholder="Your name" required />
           </label>
           <label>
-            Email / Discord
-            <input name="contact" placeholder="Email or Discord username" required />
+            Email
+            <input name="email" type="email" placeholder="you@example.com" required />
           </label>
           <label>
             Project type
@@ -47,24 +47,59 @@ export default function ContactPage() {
           </button>
         </form>
 
-        <aside className="contact-card">
-          <h2>Project brief checklist</h2>
-          <ul>
-            <li>Server version and platform</li>
-            <li>Gameplay type or server mode</li>
-            <li>Feature description</li>
-            <li>Plugin dependencies</li>
-            <li>Deadline and budget range</li>
-          </ul>
-          <div className="contact-line">
-            <span>Email</span>
-            <Link href={`mailto:${site.email}`}>{site.email}</Link>
+        <div className="contact-sidebar">
+          <aside className="contact-card">
+            <h2>Project brief checklist</h2>
+            <ul>
+              <li>Server version and platform</li>
+              <li>Gameplay type or server mode</li>
+              <li>Feature description</li>
+              <li>Plugin dependencies</li>
+              <li>Deadline and budget range</li>
+            </ul>
+            <div className="contact-line">
+              <span>Email</span>
+              <Link href={`mailto:${site.email}`}>{site.email}</Link>
+            </div>
+          </aside>
+
+          <div className="discord-widget">
+            <div className="discord-widget-heading">
+              <div>
+                <span className="eyebrow">Discord</span>
+                <h2>Join our community</h2>
+              </div>
+              <Link
+                href="https://muhammaddaffa.com/discord"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open Discord
+              </Link>
+            </div>
+            <iframe
+              src="https://discord.com/widget?id=1306875574899441674&theme=dark"
+              width="350"
+              height="500"
+              allowTransparency
+              frameBorder="0"
+              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+              loading="eager"
+              title="Blocksmith Studio Discord server"
+            />
+            <p className="discord-widget-fallback">
+              Widget unavailable?{" "}
+              <Link
+                href="https://muhammaddaffa.com/discord"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join the server directly
+              </Link>
+              .
+            </p>
           </div>
-          <div className="contact-line">
-            <span>Discord</span>
-            <span>{site.discord}</span>
-          </div>
-        </aside>
+        </div>
       </section>
     </main>
   );

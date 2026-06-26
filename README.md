@@ -13,10 +13,8 @@ Open `http://localhost:3000`.
 
 ## Hero video
 
-Replace this file path with your Minecraft animation video:
+The landing-page hero automatically plays this muted, looping background video:
 
 ```txt
-public/videos/blocksmith-hero.mp4
+public/videos/Chunk Collector Animation.mp4
 ```
-
-The landing page already uses that path in the hero section.

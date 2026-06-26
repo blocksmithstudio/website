@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     template: "%s | Blocksmith Studio"
   },
   description: site.description,
+  icons: {
+    icon: "/images/blocksmith/Logo%20Transparent.png",
+    shortcut: "/images/blocksmith/Logo%20Transparent.png",
+    apple: "/images/blocksmith/Logo%20Transparent.png"
+  },
   metadataBase: new URL(site.url),
   openGraph: {
     title: "Blocksmith Studio",
@@ -36,7 +41,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#07090d"
+  themeColor: "#161c30"
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

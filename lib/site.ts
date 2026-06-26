@@ -13,20 +13,78 @@ export const site = {
 };
 
 export const clients = [
-  "Survival Networks",
-  "Skyblock Servers",
-  "RPG Communities",
-  "Creator Projects"
-];
-
-export const stats = [
-  { value: "4+", label: "Years building Minecraft systems" },
-  { value: "100+", label: "Plugins and features delivered" },
-  { value: "1.8–1.21+", label: "Server versions supported" },
-  { value: "24/7", label: "Server-first technical thinking" }
+  { name: "TavernMC", logo: "/images/client/client_tavernmc.png" },
+  { name: "SuperSMP", logo: "/images/client/client_supersmp.png" },
+  { name: "SpookGames", logo: "/images/client/client_spookgames.png" },
+  { name: "MineGens", logo: "/images/client/client_minegens.jpeg" },
+  { name: "Mazer", logo: "/images/client/client_mazer.webp" },
+  { name: "MagicGum", logo: "/images/client/client_magicgum.jpg" },
+  { name: "HyperSteal", logo: "/images/client/client_hypersteal.png" },
+  { name: "GameRealms", logo: "/images/client/client_gamerealms.webp" },
+  { name: "BossCraft", logo: "/images/client/client_bosscraft.avif" },
+  { name: "BlissSMP", logo: "/images/client/client_blisssmp.webp" }
 ];
 
 export const products = [
+  {
+    title: "NextGens",
+    category: "Generators",
+    description: "All-in-one gens or tycoon plugin optimized for big networks.",
+    price: "$9.99",
+    image: "/images/products/nextgens.png",
+    downloadUrl: "/contact?product=nextgens"
+  },
+  {
+    title: "NextCredits",
+    category: "Economy",
+    description: "Lightweight credits plugin with unlimited shops and package designer.",
+    price: "$4.99",
+    image: "/images/products/nextcredits.png",
+    downloadUrl: "/contact?product=nextcredits"
+  },
+  {
+    title: "NextCollectors",
+    category: "Automation",
+    description: "Chunk collector plugin with upgrades, transaction logs, and more.",
+    price: "$7.99",
+    image: "/images/products/nextcollectors.png",
+    downloadUrl: "/contact?product=nextcollectors"
+  },
+  {
+    title: "NextCoinflip",
+    category: "Wagering",
+    description: "Coinflip plugin supporting item wagers and all currencies.",
+    price: "$7.99",
+    image: "/images/products/nextcoinflip.png",
+    downloadUrl: "/contact?product=nextcoinflip"
+  },
+  {
+    title: "ItemSkins",
+    category: "Cosmetics",
+    description: "Custom item skin system for cosmetic upgrades and player rewards.",
+    price: "Contact us",
+    image: "/images/products/itemskins.jpg",
+    downloadUrl: "/contact?product=itemskins"
+  },
+  {
+    title: "AvatarDonations",
+    category: "Donations",
+    description: "Donation-focused system for server monetization and player perks.",
+    price: "Contact us",
+    image: "/images/products/avatardonation.png",
+    downloadUrl: "/contact?product=avatardonations"
+  },
+  {
+    title: "PlayerProfiles",
+    category: "Player systems",
+    description: "Profile system for player stats, progression, and server identity.",
+    price: "Contact us",
+    image: "/images/products/playerprofiles.png",
+    downloadUrl: "/contact?product=playerprofiles"
+  }
+];
+
+export const services = [
   {
     title: "Custom Plugin Development",
     eyebrow: "Built from scratch",
@@ -47,13 +105,6 @@ export const products = [
     description:
       "Ongoing debugging, version updates, feature improvements, optimization, and technical support for existing servers.",
     points: ["Bug fixing", "Version updates", "Code cleanup"]
-  },
-  {
-    title: "Marketplace Products",
-    eyebrow: "Ready to deploy",
-    description:
-      "Prebuilt premium plugins and systems crafted for server owners who need reliable features without starting from zero.",
-    points: ["Fast setup", "Documentation", "Future updates"]
   }
 ];
 
