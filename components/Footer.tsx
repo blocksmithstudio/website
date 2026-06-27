@@ -18,13 +18,13 @@ const quickLinks: FooterLinkItem[] = [
 ];
 
 const platformLinks: FooterLinkItem[] = [
-  { label: "Spigot", href: "https://www.spigotmc.org/", external: true },
-  { label: "BuiltByBit", href: "https://builtbybit.com/", external: true }
+  { label: "Spigot", href: "https://www.spigotmc.org/resources/authors/aglerr.549972/", external: true },
+  { label: "BuiltByBit", href: "https://builtbybit.com/store/blocksmithplugins.158/", external: true }
 ];
 
 const followLinks: FooterLinkItem[] = [
   { label: "Discord", href: "https://muhammaddaffa.com/discord", external: true },
-  { label: "GitHub", href: "https://github.com/mdaffa48", external: true }
+  { label: "GitHub", href: "https://github.com/blocksmithstudio", external: true }
 ];
 
 function FooterLink({ href, label, external }: FooterLinkItem) {
@@ -117,16 +117,16 @@ export function Footer() {
       <div className="container footer-bottom">
         <div className="footer-legal-line">
           <span>© {new Date().getFullYear()} Blocksmith Studio. All rights reserved.</span>
-          <span aria-hidden="true">|</span>
+          {/*<span aria-hidden="true">|</span>
           <Link href="/terms" target="_blank" rel="noopener noreferrer">
             Terms
           </Link>
           <span aria-hidden="true">|</span>
           <Link href="/privacy" target="_blank" rel="noopener noreferrer">
             Privacy Policy
-          </Link>
+          </Link>*/}
         </div>
-        <span>Crafted for Minecraft creators.</span>
+        {/*<span>Crafted for Minecraft creators.</span>*/}
       </div>
     </footer>
   );

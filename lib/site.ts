@@ -2,7 +2,7 @@ export const site = {
   name: "Blocksmith Studio",
   url: "https://blocksmith.studio",
   description:
-    "A specialized Minecraft studio crafting custom plugins, server systems, and technical solutions for serious creators.",
+    "A one-stop solution for your Minecraft server needs.",
   email: "hello@blocksmith.studio",
   discord: "Blocksmith Studio",
   social: {
@@ -13,13 +13,13 @@ export const site = {
 };
 
 export const clients = [
-  { name: "TavernMC", logo: "/images/client/client_tavernmc.png" },
-  { name: "SuperSMP", logo: "/images/client/client_supersmp.png" },
-  { name: "SpookGames", logo: "/images/client/client_spookgames.png" },
-  { name: "MineGens", logo: "/images/client/client_minegens.jpeg" },
+  { name: "TavernMC", logo: "/images/client/client_tavernmc.webp" },
+  { name: "SuperSMP", logo: "/images/client/client_supersmp.webp" },
+  { name: "SpookGames", logo: "/images/client/client_spookgames.webp" },
+  { name: "MineGens", logo: "/images/client/client_minegens.webp" },
   { name: "Mazer", logo: "/images/client/client_mazer.webp" },
-  { name: "MagicGum", logo: "/images/client/client_magicgum.jpg" },
-  { name: "HyperSteal", logo: "/images/client/client_hypersteal.png" },
+  { name: "MagicGum", logo: "/images/client/client_magicgum.webp" },
+  { name: "HyperSteal", logo: "/images/client/client_hypersteal.webp" },
   { name: "GameRealms", logo: "/images/client/client_gamerealms.webp" },
   { name: "BossCraft", logo: "/images/client/client_bosscraft.avif" },
   { name: "BlissSMP", logo: "/images/client/client_blisssmp.webp" }
@@ -28,85 +28,62 @@ export const clients = [
 export const products = [
   {
     title: "NextGens",
-    category: "Generators",
+    category: "Gens Core",
     description: "All-in-one gens or tycoon plugin optimized for big networks.",
-    price: "$9.99",
-    image: "/images/products/nextgens.png",
-    downloadUrl: "/contact?product=nextgens"
+    price: "$9.99 (Freemium)",
+    image: "/images/products/nextgens.webp",
+    downloadUrl: "https://www.spigotmc.org/resources/nextgens-minecraft-gens-tycoon-plugin.111857/"
   },
   {
     title: "NextCredits",
     category: "Economy",
     description: "Lightweight credits plugin with unlimited shops and package designer.",
     price: "$4.99",
-    image: "/images/products/nextcredits.png",
-    downloadUrl: "/contact?product=nextcredits"
+    image: "/images/products/nextcredits.webp",
+    downloadUrl: "https://www.spigotmc.org/resources/nextcredits-multi-server-sync-unlimited-shops-shop-discounts-unlimited-products-and-more.121672/"
   },
   {
     title: "NextCollectors",
     category: "Automation",
     description: "Chunk collector plugin with upgrades, transaction logs, and more.",
     price: "$7.99",
-    image: "/images/products/nextcollectors.png",
-    downloadUrl: "/contact?product=nextcollectors"
+    image: "/images/products/nextcollectors.webp",
+    downloadUrl: "https://www.spigotmc.org/resources/nextcollectors-optimized-for-large-servers-with-upgrades-transaction-logs-and-more.121517/"
   },
   {
     title: "NextCoinflip",
-    category: "Wagering",
+    category: "Economy",
     description: "Coinflip plugin supporting item wagers and all currencies.",
     price: "$7.99",
-    image: "/images/products/nextcoinflip.png",
-    downloadUrl: "/contact?product=nextcoinflip"
+    image: "/images/products/nextcoinflip.webp",
+    downloadUrl: "https://builtbybit.com/resources/nextcoinflip.79319/"
   },
   {
     title: "ItemSkins",
     category: "Cosmetics",
-    description: "Custom item skin system for cosmetic upgrades and player rewards.",
-    price: "Contact us",
-    image: "/images/products/itemskins.jpg",
-    downloadUrl: "/contact?product=itemskins"
+    description: "An unique cosmetics plugin to make server have more varity item looks",
+    price: "$11,99",
+    image: "/images/products/itemskins.webp",
+    downloadUrl: "https://www.spigotmc.org/resources/itemskins-switch-your-items-texture.97459/"
   },
   {
     title: "AvatarDonations",
-    category: "Donations",
-    description: "Donation-focused system for server monetization and player perks.",
-    price: "Contact us",
-    image: "/images/products/avatardonation.png",
-    downloadUrl: "/contact?product=avatardonations"
+    category: "Fun",
+    description: "Broadcast a special message and give everyone potion effects whenever someone donates",
+    price: "Free",
+    image: "/images/products/avatardonation.webp",
+    downloadUrl: "https://www.spigotmc.org/resources/donations-1-8-1-1-21-4-broadcast-a-special-message-whenever-someone-donates.73815/"
   },
   {
     title: "PlayerProfiles",
-    category: "Player systems",
-    description: "Profile system for player stats, progression, and server identity.",
-    price: "Contact us",
-    image: "/images/products/playerprofiles.png",
-    downloadUrl: "/contact?product=playerprofiles"
+    category: "Misc",
+    description: "Show other player profiles with right-clicking them",
+    price: "Free",
+    image: "/images/products/playerprofiles.webp",
+    downloadUrl: "https://www.spigotmc.org/resources/player-profiles-1-8-1-20-1-custom-model-data-unlimited-guis-highly-customizable.75394/"
   }
 ];
 
-export const services = [
-  {
-    title: "Custom Plugin Development",
-    eyebrow: "Built from scratch",
-    description:
-      "Purpose-built Minecraft plugins designed around your server economy, gameplay loop, monetization, and player experience.",
-    points: ["Paper / Spigot", "Velocity support", "Database-ready"]
-  },
-  {
-    title: "Server Systems",
-    eyebrow: "Core infrastructure",
-    description:
-      "Advanced systems for currencies, generators, collectors, profiles, syncing, progression, rewards, and server operations.",
-    points: ["Scalable logic", "Admin tools", "Performance-minded"]
-  },
-  {
-    title: "Plugin Maintenance",
-    eyebrow: "Keep it stable",
-    description:
-      "Ongoing debugging, version updates, feature improvements, optimization, and technical support for existing servers.",
-    points: ["Bug fixing", "Version updates", "Code cleanup"]
-  }
-];
 
 export const faqs = [
   {
@@ -130,17 +107,8 @@ export const faqs = [
       "Small features can take a few days, while advanced systems may take several weeks depending on complexity, testing, and revision scope."
   },
   {
-    question: "Do you provide documentation?",
+    question: "Which payment methods do you accept?",
     answer:
-      "Yes. Larger products can include setup guides, command lists, permission lists, configuration notes, and usage documentation."
+      "We currently accept payments through PayPal and cryptocurrency."
   }
-];
-
-export const wikiTopics = [
-  "Getting started",
-  "Installation guide",
-  "Commands",
-  "Permissions",
-  "Configuration",
-  "Developer notes"
 ];

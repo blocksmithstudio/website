@@ -12,9 +12,9 @@ export default function ContactPage() {
     <main className="page-shell">
       <section className="container page-hero">
         <span className="eyebrow">Contact</span>
-        <h1>Tell us what you want to build.</h1>
+        <h1>Let's forge something awesome.</h1>
         <p>
-          Share your Minecraft server idea, target version, current setup, and the problem you want to solve. Clear details help us shape a better technical direction.
+          Tell us what you have in mind, and we’ll get back to you within 24 hours. We’d love to hear your exciting ideas!
         </p>
       </section>
 
@@ -54,7 +54,6 @@ export default function ContactPage() {
               <li>Server version and platform</li>
               <li>Gameplay type or server mode</li>
               <li>Feature description</li>
-              <li>Plugin dependencies</li>
               <li>Deadline and budget range</li>
             </ul>
             <div className="contact-line">

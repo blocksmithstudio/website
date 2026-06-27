@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "poseFileName": "welcome.mcpose",
+  "advancedArmCapTextureOffsets": {
+    "leftArm": {
+      "upperBottom": {
+        "u": 0,
+        "v": 0
+      },
+      "lowerTop": {
+        "u": 0,
+        "v": 0
+      }
+    },
+    "rightArm": {
+      "upperBottom": {
+        "u": 0,
+        "v": 0
+      },
+      "lowerTop": {
+        "u": 0,
+        "v": 0
+      }
+    }
+  },
+  "heldItems": {
+    "leftArm": null,
+    "rightArm": null
+  },
+  "pose": {
+    "headPitch": 0,
+    "headYaw": 0,
+    "bodyPitch": 0,
+    "bodyYaw": 0,
+    "bodyRoll": 0,
+    "leftArmPitch": -80,
+    "leftArmYaw": -55,
+    "leftArmRoll": 66,
+    "leftElbowPitch": 22,
+    "rightArmPitch": -95,
+    "rightArmYaw": 45,
+    "rightArmRoll": -57,
+    "rightElbowPitch": 27,
+    "leftLegPitch": -7,
+    "leftLegYaw": 2,
+    "leftLegRoll": 3,
+    "leftKneePitch": 0,
+    "rightLegPitch": 0,
+    "rightLegYaw": -8,
+    "rightLegRoll": -5,
+    "rightKneePitch": 0,
+    "spineBend": 0,
+    "headRoll": 0
+  },
+  "skin": {
+    "source": "https://textures.minecraft.net/texture/c6d7f0d97c854db948d0126d87a511c52448737f3fb08efbcc74fd2540eda3bf",
+    "label": "aglerr",
+    "origin": "username",
+    "detail": "UUID 76d7afcb8c8240fea1b34446e8c22389",
+    "modelPreference": "default"
+  },
+  "selectedPoseSelection": {
+    "kind": "bone",
+    "id": "rightArm"
+  },
+  "selectedPreset": null,
+  "showOuterLayer": true,
+  "showOuterLayerIn3d": false,
+  "showHeldItems": true,
+  "resolvedModel": "default",
+  "avatarType": "advanced",
+  "uploadModel": "auto-detect"
+}

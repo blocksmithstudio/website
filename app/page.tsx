@@ -13,8 +13,9 @@ export default function HomePage() {
       <ScrollAnimations />
       <section className="hero section" id="home">
         <div className="hero-video" aria-hidden="true">
-          <video autoPlay muted loop playsInline preload="auto" poster="/images/hero-poster.svg">
-            <source src="/videos/Chunk Collector Animation.mp4" type="video/mp4" />
+          <video autoPlay muted loop playsInline preload="metadata" poster="/images/hero-poster.webp">
+            <source src="/videos/Chunk Collector Animation.webm" type="video/webm" media="(min-width: 721px)" />
+            <source src="/videos/Chunk Collector Animation.mp4" type="video/mp4" media="(min-width: 721px)" />
           </video>
           <div className="video-overlay" />
         </div>
@@ -40,17 +41,27 @@ export default function HomePage() {
 
       <section className="solution section" id="services">
         <div className="solution-flow">
+          <div className="solution-pose" aria-hidden="true">
+            <Image
+              src="/images/pose/aglerr-pose.webp"
+              alt=""
+              width={256}
+              height={256}
+              sizes="(max-width: 720px) 118vw, 74vw"
+            />
+          </div>
+
           <div className="solution-copy solution-copy-left" data-reveal="left">
             <span className="eyebrow">What We Do</span>
-            <h2>We are a one-stop solution for your Minecraft server needs.</h2>
-            <p>Ongoing maintenance, custom plugins, textures, 3D models, and builds handled by one technical partner.</p>
+            <h2>A one-stop solution for your Minecraft server needs.</h2>
+            <p>We provides the developers, builders, artists, and technical support your Minecraft server needs, all under one studio.</p>
           </div>
 
           <div className="solution-line" aria-hidden="true" />
 
           <div className="solution-copy solution-copy-right" data-reveal="right">
             <h2>We can put your server development on autopilot.</h2>
-            <p>We plan, build, update, fix, and support the development side so your team can focus on players.</p>
+            <p>We monitor, update, fix, optimize, and support the development side so your team can focus on the innovation and the community.</p>
           </div>
         </div>
       </section>
@@ -59,7 +70,7 @@ export default function HomePage() {
         <div className="container products-heading" data-reveal="down">
           <SectionHeader
             eyebrow="Our Products"
-            title="Tools built for better servers."
+            title="Work We've Produced"
           />
         </div>
         <div className="products-showcase">
@@ -100,12 +111,22 @@ export default function HomePage() {
       </section>
 
       <section className="faq section" id="faq">
+        <div className="faq-pose" aria-hidden="true">
+          <Image
+            src="/images/pose/welcome.webp"
+            alt=""
+            width={256}
+            height={256}
+            sizes="(max-width: 720px) 78vw, 36vw"
+          />
+        </div>
+
         <div className="container faq-grid">
           <div data-reveal="down">
             <SectionHeader
               eyebrow="FAQ"
-              title="Before starting a build"
-              description="A few common questions from server owners and creators."
+              title="We've got answers for your questions."
+              description="Everything you need to know before starting a project with us!"
             />
           </div>
 
@@ -117,14 +138,26 @@ export default function HomePage() {
 
       <section className="cta section" data-reveal="down">
         <div className="container cta-card">
-          <span className="eyebrow">Long-term support</span>
-          <h2>One team for your plugins, systems, and maintenance.</h2>
-          <p>
-            From custom development to daily operational technical support, We keep your server moving, eliminating your worries about server stability.
-          </p>
-          <Link className="button button-primary" href="/contact">
-            Work With Us
-          </Link>
+          <div className="cta-copy">
+            <span className="eyebrow">Long-term support</span>
+            <h2>One team for your plugins, systems, and maintenance.</h2>
+            <p>
+              From custom development to daily operational technical support, We keep your server moving, eliminating your worries about server stability.
+            </p>
+            <Link className="button button-primary" href="/contact">
+              Work With Us
+            </Link>
+          </div>
+
+          <div className="cta-pose" aria-hidden="true">
+            <Image
+              src="/images/pose/blacksmith.webp"
+              alt=""
+              width={512}
+              height={512}
+              sizes="(max-width: 720px) 72vw, 360px"
+            />
+          </div>
         </div>
       </section>
     </main>

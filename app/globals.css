@@ -717,8 +717,10 @@ p {
 }
 
 .solution {
+  position: relative;
   padding-top: 48px;
-  overflow: hidden;
+  z-index: 1;
+  overflow: visible;
 }
 
 .solution-flow {
@@ -726,6 +728,37 @@ p {
   width: 100%;
   padding: 0 clamp(20px, 5vw, 86px);
   isolation: isolate;
+}
+
+.solution-pose {
+  position: absolute;
+  bottom: clamp(-120px, -8vw, -62px);
+  left: clamp(28px, 7vw, 132px);
+  z-index: 1;
+  width: clamp(680px, 74vw, 1040px);
+  pointer-events: none;
+  opacity: 0.88;
+  transform: translate(-39%, 30%) rotate(-3deg);
+}
+
+.solution-pose img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 30px 44px rgba(0, 0, 0, 0.36));
+  image-rendering: pixelated;
+  animation: solution-pose-float 6.8s ease-in-out infinite;
+}
+
+@keyframes solution-pose-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(0, -14px, 0) rotate(1.4deg);
+  }
 }
 
 .solution-flow::before {
@@ -868,7 +901,46 @@ p {
   font-size: 13px;
 }
 
+.faq {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.faq-pose {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  z-index: 0;
+  width: clamp(430px, 36vw, 620px);
+  pointer-events: none;
+  opacity: 0.82;
+  transform: translate(-52%, -48%) rotate(75deg);
+}
+
+.faq-pose img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 28px 42px rgba(0, 0, 0, 0.34));
+  image-rendering: pixelated;
+  animation: faq-pose-peek 7.4s ease-in-out infinite;
+}
+
+@keyframes faq-pose-peek {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(16px, -10px, 0) rotate(-3deg);
+  }
+}
+
 .faq-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: 42px;
@@ -973,12 +1045,16 @@ details p {
 
 .cta-card {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 360px);
+  align-items: center;
+  gap: clamp(20px, 5vw, 58px);
   padding: clamp(32px, 7vw, 72px);
   border-color: rgba(145, 167, 239, 0.22);
   border-radius: 34px;
   background:
     linear-gradient(90deg, rgba(9, 13, 28, 0.96), rgba(22, 28, 48, 0.86) 52%, rgba(22, 28, 48, 0.66)),
-    url("/images/hero-poster.svg") center / cover no-repeat;
+    url("/images/hero-poster.webp") center / cover no-repeat;
   box-shadow:
     0 30px 90px rgba(0, 0, 0, 0.42),
     inset 0 0 0 1px rgba(255, 255, 255, 0.04);
@@ -1001,6 +1077,11 @@ details p {
   z-index: 1;
 }
 
+.cta-copy {
+  max-width: 760px;
+  text-align: left;
+}
+
 .cta-card p {
   max-width: 620px;
   color: #d5dcf3;
@@ -1008,6 +1089,22 @@ details p {
 
 .cta-card h2 {
   max-width: 820px;
+}
+
+.cta-pose {
+  align-self: center;
+  justify-self: end;
+  width: min(100%, 360px);
+  margin: 0 clamp(-24px, -3vw, -8px) 0 0;
+  pointer-events: none;
+}
+
+.cta-pose img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 24px 34px rgba(0, 0, 0, 0.36));
+  image-rendering: pixelated;
 }
 
 .page-shell {
@@ -1387,6 +1484,10 @@ details p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .cta-card {
+    grid-template-columns: minmax(0, 1fr) minmax(210px, 280px);
+  }
+
   .service-grid {
     grid-template-columns: 1fr;
   }
@@ -1498,6 +1599,21 @@ details p {
     padding: 0 18px;
   }
 
+  .solution-pose {
+    bottom: -84px;
+    left: 24px;
+    width: clamp(430px, 118vw, 610px);
+    opacity: 0.78;
+    transform: translate(-40%, 28%) rotate(-3deg);
+  }
+
+  .faq-pose {
+    top: 42%;
+    width: clamp(310px, 78vw, 430px);
+    opacity: 0.58;
+    transform: translate(-58%, -48%) rotate(75deg);
+  }
+
   .solution-flow::before {
     top: 52px;
     right: 24px;
@@ -1549,6 +1665,17 @@ details p {
     flex-direction: column;
     gap: 6px;
   }
+
+  .cta-card {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+
+  .cta-pose {
+    justify-self: center;
+    width: min(78vw, 320px);
+    margin: -8px 0 -28px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1568,5 +1695,10 @@ details p {
   .faq-panel,
   .faq-panel p {
     transition: none;
+  }
+
+  .solution-pose img,
+  .faq-pose img {
+    animation: none;
   }
 }
