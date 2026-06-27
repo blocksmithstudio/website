@@ -22,7 +22,8 @@ export const clients = [
   { name: "HyperSteal", logo: "/images/client/client_hypersteal.webp" },
   { name: "GameRealms", logo: "/images/client/client_gamerealms.webp" },
   { name: "BossCraft", logo: "/images/client/client_bosscraft.avif" },
-  { name: "BlissSMP", logo: "/images/client/client_blisssmp.webp" }
+  { name: "BlissSMP", logo: "/images/client/client_blisssmp.webp" },
+  { name: "AlwiNation", logo: "/images/client/client_alwination.webp" }
 ];
 
 export const products = [
