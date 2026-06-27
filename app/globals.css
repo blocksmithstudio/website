@@ -57,13 +57,11 @@ body::after {
   inset: 0;
   pointer-events: none;
   opacity: 0.05;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent 0,
-    transparent 12px,
-    #ffffff 13px,
-    transparent 14px
-  );
+  background-image: repeating-linear-gradient(45deg,
+      transparent 0,
+      transparent 12px,
+      #ffffff 13px,
+      transparent 14px);
   z-index: -1;
 }
 
@@ -600,7 +598,7 @@ p {
   background: linear-gradient(0deg, var(--bg), rgba(12, 16, 32, 0));
 }
 
-.products-showcase > * {
+.products-showcase>* {
   position: relative;
   z-index: 1;
 }
@@ -751,6 +749,7 @@ p {
 }
 
 @keyframes solution-pose-float {
+
   0%,
   100% {
     transform: translate3d(0, 0, 0) rotate(0deg);
@@ -928,6 +927,7 @@ p {
 }
 
 @keyframes faq-pose-peek {
+
   0%,
   100% {
     transform: translate3d(0, 0, 0) rotate(0deg);
@@ -1072,7 +1072,7 @@ details p {
     linear-gradient(0deg, rgba(6, 9, 23, 0.35), rgba(6, 9, 23, 0.08));
 }
 
-.cta-card > * {
+.cta-card>* {
   position: relative;
   z-index: 1;
 }
@@ -1221,7 +1221,7 @@ details p {
   letter-spacing: -0.04em;
 }
 
-.discord-widget-heading > a {
+.discord-widget-heading>a {
   flex: 0 0 auto;
   padding: 9px 12px;
   color: #ffffff;
@@ -1683,10 +1683,6 @@ details p {
     opacity: 1;
     transform: none;
     transition: none;
-  }
-
-  .client-track {
-    animation: none;
   }
 
   .product-list-image,
