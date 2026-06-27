@@ -9,3 +9,8 @@ yarn-error.log*
 pnpm-debug.log*
 .idea/
 /.idea/
+/.idea/website.iml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/misc.xml
+
