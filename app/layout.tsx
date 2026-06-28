@@ -17,12 +17,18 @@ const jetbrains = JetBrains_Mono({
   display: "swap"
 });
 
+const socialImage = "/images/blocksmith/Logo%20Blue%20Background.png";
+
 export const metadata: Metadata = {
+  applicationName: "Blocksmith Studio | Long Term Minecraft Server Development Partner",
   title: {
-    default: "Blocksmith Studio — Minecraft Development Studio",
+    default: "Blocksmith Studio - Minecraft Development Studio",
     template: "%s | Blocksmith Studio"
   },
   description: site.description,
+  alternates: {
+    canonical: site.url
+  },
   icons: {
     icon: "/images/blocksmith/Logo%20Transparent.png",
     shortcut: "/images/blocksmith/Logo%20Transparent.png",
@@ -30,11 +36,26 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(site.url),
   openGraph: {
-    title: "Blocksmith Studio",
+    title: "Blocksmith Studio | Long Term Minecraft Server Development Partner",
     description: site.description,
     url: site.url,
     siteName: site.name,
+    images: [
+      {
+        url: socialImage,
+        width: 800,
+        height: 800,
+        alt: "Blocksmith Studio logo on blue background",
+        type: "image/png"
+      }
+    ],
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blocksmith Studio | Long Term Minecraft Server Development Partner",
+    description: site.description,
+    images: [socialImage]
   }
 };
 

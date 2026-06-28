@@ -2,7 +2,7 @@ export const site = {
   name: "Blocksmith Studio",
   url: "https://blocksmith.studio",
   description:
-    "A one-stop solution for your Minecraft server needs.",
+    "A one-stop solution for your Minecraft server needs, we offer custom plugins, custom builds, 3d models, and texture artists work.",
   email: "hello@blocksmith.studio",
   discord: "Blocksmith Studio",
   social: {
@@ -88,28 +88,28 @@ export const products = [
 
 export const faqs = [
   {
-    question: "Do you build fully custom Minecraft plugins?",
+    question: "What services do you offer?",
     answer:
-      "Yes. Blocksmith Studio focuses on custom server systems and plugins that match your exact gameplay, business, and technical needs."
-  },
-  {
-    question: "Can you work with an existing server?",
-    answer:
-      "Yes. We can review your current setup, existing plugins, database structure, and server flow before planning the safest development path."
-  },
-  {
-    question: "Do you support Paper, Spigot, and Velocity?",
-    answer:
-      "Yes. Most projects are built for Paper or Spigot, and proxy-level systems can be handled with Velocity when needed."
+      "We specialize in a long-term development support for Minecraft server and we also offer work for custom plugins, custom builds, 3d models, and texture artists."
   },
   {
     question: "How long does a project usually take?",
     answer:
-      "Small features can take a few days, while advanced systems may take several weeks depending on complexity, testing, and revision scope."
+      "Small features can take only a few hours while advanced system may take several days or weeks depending on complexity, testing, and revision scope."
+  },
+  {
+    question: "How can I start working with you?",
+    answer:
+       "Send an email to hello@blacksmith.studio (us) or join our discord and create a support ticket, we'll reply to you within 24 hours."
   },
   {
     question: "Which payment methods do you accept?",
     answer:
       "We currently accept payments through PayPal and cryptocurrency."
+  },
+  {
+    question: "What is your payment policy?",
+    answer:
+      "We require a 50% upfront payment before starting the work, and the remaining 50% after final review but before delivering the product. For live custom builds (build directly on your server) we require 100% upfront payment."
   }
 ];
