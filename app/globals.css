@@ -1294,7 +1294,7 @@ details p {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(90deg, transparent 15%, rgba(8, 13, 27, 0.85) 15% 25%, transparent 25% 50%, rgba(8, 13, 27, 0.85) 50% 60%, transparent 60% 85%, rgba(8, 13, 27, 0.85) 85%),
+    linear-gradient(90deg, transparent 15%, rgba(8, 13, 27, 0.85) 15% 25%, transparent 25% 45%, rgba(8, 13, 27, 0.85) 45% 55%, transparent 55% 75%, rgba(8, 13, 27, 0.85) 75% 85%, transparent 85%),
     linear-gradient(rgba(145, 167, 239, 0.09) 1px, transparent 1px),
     linear-gradient(90deg, rgba(145, 167, 239, 0.09) 1px, transparent 1px),
     radial-gradient(ellipse at 50% 72%, rgba(79, 119, 214, 0.32), transparent 65%);
@@ -1310,6 +1310,7 @@ details p {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
+  text-align: center;
 }
 
 .footer-link-section h2 {
@@ -1324,7 +1325,7 @@ details p {
 
 .footer-links {
   display: grid;
-  justify-items: start;
+  justify-items: center;
 }
 
 .footer-links a {
@@ -1510,6 +1511,10 @@ details p {
   .footer-link-sections {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px 20px;
+  }
+
+  .footer-link-section:last-child {
+    grid-column: 1 / -1;
   }
 
   .footer-links a {
