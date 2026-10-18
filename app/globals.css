@@ -1306,41 +1306,9 @@ details p {
   position: relative;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1.5fr);
-  gap: clamp(40px, 7vw, 100px);
-  align-items: start;
-}
-
-.footer-main {
-  min-width: 0;
-}
-
-.footer-brand {
-  margin-bottom: 16px;
-}
-
-.footer-main p {
-  max-width: 300px;
-  margin: 0 0 22px;
-  color: var(--muted);
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.footer-contact {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  min-height: 44px;
-  color: var(--text);
-  font-size: 14px;
-}
-
 .footer-link-sections {
   display: grid;
-  grid-template-columns: 0.85fr 1.25fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
 }
 
@@ -1369,20 +1337,17 @@ details p {
   line-height: 1.5;
 }
 
-.footer-links a span,
-.footer-contact span {
+.footer-links a span {
   color: var(--muted-2);
   font-size: 13px;
   transition: transform 160ms ease, color 160ms ease;
 }
 
-.footer-links a:hover,
-.footer-contact:hover {
+.footer-links a:hover {
   color: #fff;
 }
 
-.footer-links a:hover span,
-.footer-contact:hover span {
+.footer-links a:hover span {
   color: var(--brand-accent);
   transform: translate(2px, -2px);
 }
@@ -1409,22 +1374,11 @@ details p {
 }
 
 .footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
   padding-top: 24px;
   color: var(--muted);
   border-top: 1px solid var(--border);
   font-size: 12px;
   line-height: 1.6;
-}
-
-.footer-signoff {
-  font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 @media (max-width: 1050px) {
@@ -1475,13 +1429,8 @@ details p {
 
   .split-section,
   .faq-grid,
-  .contact-grid,
-  .footer-grid {
+  .contact-grid {
     grid-template-columns: 1fr;
-  }
-
-  .footer-link-sections {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .docs-grid {
@@ -1550,17 +1499,12 @@ details p {
     font-size: clamp(42px, 15vw, 68px);
   }
 
-  .hero-actions,
-  .footer-bottom {
+  .hero-actions {
     flex-direction: column;
   }
 
   .footer {
     padding-top: 48px;
-  }
-
-  .footer-main p {
-    max-width: 340px;
   }
 
   .footer-link-sections {
@@ -1575,11 +1519,6 @@ details p {
   .footer-wordmark {
     margin-top: 40px;
     margin-bottom: 24px;
-  }
-
-  .footer-bottom {
-    align-items: flex-start;
-    gap: 10px;
   }
 
   .docs-grid {

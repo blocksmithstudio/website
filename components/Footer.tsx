@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import { site } from "@/lib/site";
 
 type FooterLinkItem = {
   label: string;
@@ -44,56 +42,33 @@ export function Footer() {
     <footer className="footer">
       <div className="footer-art" aria-hidden="true" />
       <div className="container footer-content">
-        <div className="footer-grid">
-          <div className="footer-main">
-            <Link className="brand footer-brand" href="/">
-              <span className="brand-logo-frame" aria-hidden="true">
-                <Image
-                  className="brand-logo"
-                  src="/images/blocksmith/Logo Transparent.png"
-                  alt=""
-                  width={112}
-                  height={112}
-                />
-              </span>
-              <span>{site.name}</span>
-            </Link>
-            <p>Plugins, custom development, and long-term support for your Minecraft server.</p>
-            <Link className="footer-contact" href={`mailto:${site.email}`}>
-              {site.email}
-              <span aria-hidden="true">↗</span>
-            </Link>
-          </div>
-
-          <div className="footer-link-sections">
-            {linkGroups.map(({ title, links }) => (
-              <nav className="footer-link-section" aria-label={title} key={title}>
-                <h2>{title}</h2>
-                <div className="footer-links">
-                  {links.map(({ label, href, external }) => (
-                    <Link
-                      href={href}
-                      target={external ? "_blank" : undefined}
-                      rel={external ? "noopener noreferrer" : undefined}
-                      key={href}
-                    >
-                      {label}
-                      {external && <span aria-hidden="true">↗</span>}
-                    </Link>
-                  ))}
-                </div>
-              </nav>
-            ))}
-          </div>
+        <div className="footer-link-sections">
+          {linkGroups.map(({ title, links }) => (
+            <nav className="footer-link-section" aria-label={title} key={title}>
+              <h2>{title}</h2>
+              <div className="footer-links">
+                {links.map(({ label, href, external }) => (
+                  <Link
+                    href={href}
+                    target={external ? "_blank" : undefined}
+                    rel={external ? "noopener noreferrer" : undefined}
+                    key={href}
+                  >
+                    {label}
+                    {external && <span aria-hidden="true">↗</span>}
+                  </Link>
+                ))}
+              </div>
+            </nav>
+          ))}
         </div>
 
         <Link className="footer-wordmark" href="/" aria-label="Blocksmith Studio home">
-          Blocksmith<span className="footer-wordmark-dot" aria-hidden="true">.</span>
+          blocksmith<span className="footer-wordmark-dot" aria-hidden="true">.</span>
         </Link>
 
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} Blocksmith Studio. All rights reserved.</span>
-          <span className="footer-signoff">Made for Minecraft.</span>
         </div>
       </div>
     </footer>
