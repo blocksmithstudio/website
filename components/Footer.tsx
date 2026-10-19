@@ -23,7 +23,8 @@ const linkGroups: { title: string; links: FooterLinkItem[] }[] = [
       { label: "Documentation", href: "https://docs.blocksmith.studio/", external: true },
       { label: "Service Status", href: "https://status.blocksmith.studio/", external: true },
       { label: "Panel", href: "https://panel.blocksmith.studio/", external: true },
-      { label: "Maven Repository", href: "https://repo.blocksmith.studio", external: true }
+      { label: "Maven Repository", href: "https://repo.blocksmith.studio", external: true },
+      { label: "Paste", href: "https://paste.blocksmith.studio/", external: true }
     ]
   },
   {
